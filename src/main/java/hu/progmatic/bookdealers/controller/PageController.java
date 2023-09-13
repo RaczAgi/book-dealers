@@ -24,7 +24,7 @@ public class PageController {
         return "home";
     }
     @GetMapping("/about")
-    public String getReg() {
+    public String getAbout() {
         return "about";
     }
 

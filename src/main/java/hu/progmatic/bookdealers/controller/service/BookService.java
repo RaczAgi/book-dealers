@@ -2,6 +2,7 @@ package hu.progmatic.bookdealers.controller.service;
 
 import hu.progmatic.bookdealers.controller.model.Book;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +17,8 @@ public class BookService {
         books.add(new Book("Rowling", "Harry Potter"));
     }
 
-    public Book addBook(Book book){
-        return book;
+    public void addBook(Book book){
+        books.add(book);
     }
 
     public List<Book> getAllBooks() {

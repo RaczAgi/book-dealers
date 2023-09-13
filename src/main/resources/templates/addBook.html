@@ -17,9 +17,11 @@
     <br>
     <br>
 </table>
-<form th:action="@{/add-Book}" method="get">
-    <label>New Book title<input placeholder="Írd ide könyv címét" type="text" id="title" title="title"></label>
-    <label>New Book author<input placeholder="Ki írta a könyvet" type="text" id="author" author="author"></label>
+<form th:action="@{/add-book}" method="post">
+    <input type="text" class="form-control" id="title" placeholder="Mi a könyv címe" th:field="*{newBook.title}">
+        <label for="title">Title</label>
+    <input type="text" class="form-control" id="author" placeholder="Ki írta a könyvet" th:field="*{newBook.author}">
+        <label for="title">Author</label>
     <br>
     <br>
     <button type="submit">Submit</button>

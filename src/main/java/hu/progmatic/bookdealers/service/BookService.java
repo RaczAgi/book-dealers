@@ -1,8 +1,7 @@
-package hu.progmatic.bookdealers.controller.service;
+package hu.progmatic.bookdealers.service;
 
-import hu.progmatic.bookdealers.controller.model.Book;
+import hu.progmatic.bookdealers.model.Book;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.ArrayList;
 import java.util.List;

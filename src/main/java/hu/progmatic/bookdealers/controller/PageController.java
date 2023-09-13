@@ -1,7 +1,7 @@
 package hu.progmatic.bookdealers.controller;
 
-import hu.progmatic.bookdealers.controller.model.Book;
-import hu.progmatic.bookdealers.controller.service.BookService;
+import hu.progmatic.bookdealers.model.Book;
+import hu.progmatic.bookdealers.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

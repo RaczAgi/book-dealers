@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/form.css">
+
+</head>
+<body>
+<table class="header">
+    <tr>
+        <td><a th:href="@{/home}">Home</a></td>
+        <td><a th:href="@{/about}">About</a></td>
+        <td><a th:href="@{/books}">Books</a></td>
+        <td><a th:href="@{/add-book}">AddNewBook</a></td>
+    </tr>
+    <br>
+    <br>
+</table>
+<form th:action="@{/add-Book}" method="get">
+    <label>New Book title<input placeholder="Írd ide könyv címét" type="text" id="title" title="title"></label>
+    <label>New Book author<input placeholder="Ki írta a könyvet" type="text" id="author" author="author"></label>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

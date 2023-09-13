@@ -1,0 +1,16 @@
+body {
+    background-color: gray;
+}
+.header{
+    background-color: darkblue;
+    margin: 0 auto;
+    padding: 10px;
+}
+.header.element{
+    padding: 10px;
+    text-align: center;
+}
+a {
+    color: lightblue;
+    text-decoration: none;
+}

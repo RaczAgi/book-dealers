@@ -1,8 +1,14 @@
 package hu.progmatic.bookdealers.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.Random;
+
 public class Book {
         String author;
         String title;
+
+
 
     public Book() {
     }
@@ -11,6 +17,7 @@ public class Book {
         this.author = author;
         this.title = title;
     }
+
 
     public String getAuthor() {
         return author;

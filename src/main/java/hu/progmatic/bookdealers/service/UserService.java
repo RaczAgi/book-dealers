@@ -16,7 +16,7 @@ public class UserService {
     public UserService(Random random) {
 
         this.randomGenerator = random;
-        users.add(new User("Ági", 1978, 2023));
+        users.add(new User(00001, "Ági", 1978, 2023));
     }
     public void addUser(User user){ users.add(user);
     }
@@ -29,4 +29,11 @@ public class UserService {
         return users.get(randomGenerator.nextInt(users.size()));
     }
 
+    public User getUser(int id){
+        for (var actual : users){
+            if (id == actual.getId()){
+            return actual;
+        }
+    } return null;
+    }
 }

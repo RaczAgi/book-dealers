@@ -22,6 +22,7 @@
                 <a class="nav-link" href="/reg">Registration</a>
                 <a class="nav-link" href="/users">Users</a>
                 <a class="nav-link" href="/randomuser">RandomUser</a>
+                <a class="nav-link" href="/searchuser">Search User</a>
             </div>
         </div>
     </div>
@@ -31,12 +32,14 @@
     <table class="table table-striped table-hover">
         <thead>
         <tr>
+<th>ID</th>
 <th>Name</th>
 <th>Birthdate</th>
 <th>Registration date</th>
 </thead>
         <tbody>
 <tr>
+    <td><p th:text="${randomUser.getId()}">name</p></td>
     <td><p th:text="${randomUser.getName()}">name</p></td>
 <td><p th:text="${randomUser.getBirthdate()}">birthdate</p></td>
 <td><p th:text="${randomUser.getRegDate()}">regDate</p></td>

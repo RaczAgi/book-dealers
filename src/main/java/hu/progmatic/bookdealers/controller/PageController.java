@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+
+
 @Controller
 public class PageController {
 
@@ -68,6 +70,18 @@ public class PageController {
     public String addReg(@ModelAttribute("newUser") User newUser) {
         userService.addUser(newUser);
         return "redirect:/users";}
+
+    @GetMapping("/searchuser")
+    public String doSearchUser(Model model, int id){
+        model.addAttribute("searchuser", userService.getUser(id));
+        return "searchuser";
+    }
+    @PostMapping("/searchuser")
+    public String getUser(@ModelAttribute("id") int id) {
+        userService.getUser(id);
+        return "redirect:/users";
+    }
+
 
 
 }
